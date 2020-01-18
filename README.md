@@ -112,7 +112,9 @@ src klasorümüze girelim.
   
 ## chaine ilk startımızı verelim.
 
-`./komodod -ac_name=MCL -ac_supply=2000000 -ac_cc=2 -addnode=37.148.210.158 -addnode=37.148.212.36 -addressindex=1 -spentindex=1 -ac_marmara=1 -ac_staked=75 -ac_reward=3000000000 &`
+```
+./komodod -ac_name=MCL -ac_supply=2000000 -ac_cc=2 -addnode=37.148.210.158 -addnode=37.148.212.36 -addressindex=1 -spentindex=1 -ac_marmara=1 -ac_staked=75 -ac_reward=3000000000 &
+```
 
 ## ardından bir wallet adresi oluşturup not alınız. 
 
@@ -124,7 +126,9 @@ src klasorümüze girelim.
 
 ## oluşturulan wallet adresini alttaki komuttaki "wallet-adresi" yazan kısma girip enter'a basıyoruz 
 
-`./komodo-cli -ac_name=MCL validateaddress "wallet-adresi"`
+```
+./komodo-cli -ac_name=MCL validateaddress "wallet-adresi"
+```
 
 
 ## bu şekilde çıktı alacaksınız. ve burada yazan pubkey i de not alınız. 
