@@ -182,7 +182,21 @@ cd /komodo/src
 ./komodo-cli -ac_name=MCL stop
 ./komodod -ac_name=MCL -ac_supply=2000000 -ac_cc=2 -addnode=37.148.210.158 -addnode=37.148.212.36 -addressindex=1 -spentindex=1 -ac_marmara=1 -ac_staked=75 -ac_reward=3000000000 -gen -genproclimit=2 -pubkey="pubkeyburayagirilecek" &
 ```
-
+---
+## MCL params.
+```	
+./komodo-cli -ac_name=MCL marmaracreditloop txid
+./komodo-cli -ac_name=MCL marmarainfo firstheight lastheight minamount maxamount [currency issuerpk]
+./komodo-cli -ac_name=MCL marmaraissue receiverpk amount currency matures approvaltxid
+./komodo-cli -ac_name=MCL marmaralock amount unlockht
+./komodo-cli -ac_name=MCL marmarapoolpayout perc firstheight "[[\"pubkey\":shares], ...]"
+./komodo-cli -ac_name=MCL marmarareceive senderpk amount currency matures batontxid
+./komodo-cli -ac_name=MCL marmarasettlement batontxid
+./komodo-cli -ac_name=MCL marmaratransfer receiverpk amount currency matures approvaltxid
+./komodo-cli -ac_name=MCL marmaraaddress
+./komodo-cli -ac_name=MCL marmarainfo 0 0 0 0 //to get details
+./komodo-cli -ac_name=MCL walletaddress amount
+```
 
 
 
@@ -367,6 +381,21 @@ You can run it by using following command. text your pubkey to the area "-pubkey
 cd /komodo/src
 ./komodo-cli -ac_name=MCL stop
 ./komodod -ac_name=MCL -ac_supply=2000000 -ac_cc=2 -addnode=37.148.210.158 -addressindex=1 -spentindex=1 -ac_marmara=1 -ac_staked=75 -ac_reward=3000000000 -gen -genproclimit=2 -pubkey="pubkeyburayagirilecek" &
+```
+---
+## MCL params.
+```	
+./komodo-cli -ac_name=MCL marmaracreditloop txid
+./komodo-cli -ac_name=MCL marmarainfo firstheight lastheight minamount maxamount [currency issuerpk]
+./komodo-cli -ac_name=MCL marmaraissue receiverpk amount currency matures approvaltxid
+./komodo-cli -ac_name=MCL marmaralock amount unlockht
+./komodo-cli -ac_name=MCL marmarapoolpayout perc firstheight "[[\"pubkey\":shares], ...]"
+./komodo-cli -ac_name=MCL marmarareceive senderpk amount currency matures batontxid
+./komodo-cli -ac_name=MCL marmarasettlement batontxid
+./komodo-cli -ac_name=MCL marmaratransfer receiverpk amount currency matures approvaltxid
+./komodo-cli -ac_name=MCL marmaraaddress
+./komodo-cli -ac_name=MCL marmarainfo 0 0 0 0 //to get details
+./komodo-cli -ac_name=MCL walletaddress amount
 ```
 
 ### Now, You are ready to participate in MCL credit loops.
