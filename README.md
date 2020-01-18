@@ -153,17 +153,17 @@ src klasorümüze girelim.
 ```
 ./komodo-cli -ac_name=MCL stop
 ```
-## Sırada pubkeyimizi kullanarak chain i Mining modun da çalıştırmak. 
+## Pubkey kullanarak zincirimizi başlatalım. 
 
 Aşağıki komutu kullanarak çalıştırabilirsiniz. aşağıda ki "-pubkey=pubkeyburayagirilecek"  kısma not aldığınız pubkeyi giriniz. ve alttaki komut satırını düzenledikten sonra "cd komodo/src" klasorüne girip yapıştırın.
 	
 ```
-./komodod -ac_name=MCL -ac_supply=2000000 -ac_cc=2 -addnode=37.148.210.158 -addnode=37.148.212.36 -addressindex=1 -spentindex=1 -ac_marmara=1 -ac_staked=75 -ac_reward=3000000000 -gen -genproclimit=2 -pubkey="pubkeyburayagirilecek" &
+./komodod -ac_name=MCL -ac_supply=2000000 -ac_cc=2 -addnode=37.148.210.158 -addnode=37.148.212.36 -addressindex=1 -spentindex=1 -ac_marmara=1 -ac_staked=75 -ac_reward=3000000000 -pubkey="pubkeyburayagirilecek" &
 ```
 
 ## Ve artık mining halde çalışıyor sunucumuz. 
 
-## mining dökümlerinize aşağıdaki kodları kullanarak ulaşabilirsiniz. 
+## dökümlerinize aşağıdaki kodları kullanarak ulaşabilirsiniz. 
 
 ```
 ./komodo-cli -ac_name=MCL getinfo
@@ -184,7 +184,7 @@ Aşağıki komutu kullanarak çalıştırabilirsiniz. aşağıda ki "-pubkey=pub
 ```
 cd /komodo/src
 ./komodo-cli -ac_name=MCL stop
-./komodod -ac_name=MCL -ac_supply=2000000 -ac_cc=2 -addnode=37.148.210.158 -addnode=37.148.212.36 -addressindex=1 -spentindex=1 -ac_marmara=1 -ac_staked=75 -ac_reward=3000000000 -gen -genproclimit=2 -pubkey="pubkeyburayagirilecek" &
+./komodod -ac_name=MCL -ac_supply=2000000 -ac_cc=2 -addnode=37.148.210.158 -addnode=37.148.212.36 -addressindex=1 -spentindex=1 -ac_marmara=1 -ac_staked=75 -ac_reward=3000000000 -pubkey="pubkeyburayagirilecek" &
 ```
 ---
 ## MCL params.
@@ -312,7 +312,7 @@ cd ~/komodo/src
 ### Start the chain firstly.
 
 ```
-./komodod -ac_name=MCL -ac_supply=2000000 -ac_cc=2 -addnode=37.148.210.158 -addnode=37.148.212.36 -addressindex=1 -spentindex=1 -ac_marmara=1 -ac_staked=75 -ac_reward=3000000000 -gen -genproclimit=2 -pubkey="pubkeyburayagirilecek" &
+./komodod -ac_name=MCL -ac_supply=2000000 -ac_cc=2 -addnode=37.148.210.158 -addnode=37.148.212.36 -addressindex=1 -spentindex=1 -ac_marmara=1 -ac_staked=75 -ac_reward=3000000000 -pubkey="pubkeyburayagirilecek" &
 ```
 
 ### then create a wallet address and write down this wallet address. 
@@ -354,11 +354,11 @@ this is the your pubkey : `03a3f641c4679c579b20c597435e8a32d50091bfc56e28303f5eb
 ./komodo-cli -ac_name=MCL stop
 ```
 
-### next step is the runing to chain in mining mode by using your own pubkey.
+### Let's start our chain using Pubkey.
 
 You can run it by using following command. text your pubkey to the area "-pubkey=pubkeyburayagirilecek" and then, copy to all command and then, when it is at "cd komodo/src" , paste it and click "enter"
 ```
-./komodod -ac_name=MCL -ac_supply=2000000 -ac_cc=2 -addnode=37.148.210.158 -addnode=37.148.212.36 -addressindex=1 -spentindex=1 -ac_marmara=1 -ac_staked=75 -ac_reward=3000000000 -gen -genproclimit=2 -pubkey="pubkeyburayagirilecek" &
+./komodod -ac_name=MCL -ac_supply=2000000 -ac_cc=2 -addnode=37.148.210.158 -addnode=37.148.212.36 -addressindex=1 -spentindex=1 -ac_marmara=1 -ac_staked=75 -ac_reward=3000000000 -pubkey="pubkeyburayagirilecek" &
 ```
 
 ### at the moment, our server starts to running as mining mode . 
@@ -367,7 +367,7 @@ You can run it by using following command. text your pubkey to the area "-pubkey
 
 ```
 ./komodo-cli -ac_name=MCL getinfo
-./komodo-cli -ac_name=MCL marmarainfo 0 0 0 0 //to get details
+./komodo-cli -ac_name=MCL marmarainfo 0 0 0 0 pubkey (to get details)
 ```
 
 ### Options to operate the Marmara Chain in different modes are as follows;
@@ -384,7 +384,7 @@ You can run it by using following command. text your pubkey to the area "-pubkey
 ```
 cd /komodo/src
 ./komodo-cli -ac_name=MCL stop
-./komodod -ac_name=MCL -ac_supply=2000000 -ac_cc=2 -addnode=37.148.210.158 -addnode=37.148.212.36 -addressindex=1 -spentindex=1 -ac_marmara=1 -ac_staked=75 -ac_reward=3000000000 -gen -genproclimit=2 -pubkey="pubkeyburayagirilecek" &
+./komodod -ac_name=MCL -ac_supply=2000000 -ac_cc=2 -addnode=37.148.210.158 -addnode=37.148.212.36 -addressindex=1 -spentindex=1 -ac_marmara=1 -ac_staked=75 -ac_reward=3000000000 -pubkey="pubkeyburayagirilecek" &
 ```
 ---
 ## MCL params.
