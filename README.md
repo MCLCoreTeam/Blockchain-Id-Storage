@@ -194,7 +194,7 @@ cd /komodo/src
 ./komodo-cli -ac_name=MCL marmarasettlement batontxid
 ./komodo-cli -ac_name=MCL marmaratransfer receiverpk amount currency matures approvaltxid
 ./komodo-cli -ac_name=MCL marmaraaddress
-./komodo-cli -ac_name=MCL marmarainfo 0 0 0 0 //to get details
+./komodo-cli -ac_name=MCL marmarainfo 0 0 0 0 <pubkey> //to get details
 ./komodo-cli -ac_name=MCL walletaddress amount
 ```
 
@@ -394,7 +394,7 @@ cd /komodo/src
 ./komodo-cli -ac_name=MCL marmarasettlement batontxid
 ./komodo-cli -ac_name=MCL marmaratransfer receiverpk amount currency matures approvaltxid
 ./komodo-cli -ac_name=MCL marmaraaddress
-./komodo-cli -ac_name=MCL marmarainfo 0 0 0 0 //to get details
+./komodo-cli -ac_name=MCL marmarainfo 0 0 0 0 <pubkey> //to get details
 ./komodo-cli -ac_name=MCL walletaddress amount
 ```
 
