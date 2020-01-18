@@ -93,7 +93,7 @@ OS : Ubuntu 16.04 LTS x86_64
 ## 5. kısım - Installing Komodo	
 ```
 	cd 
-	git clone https://github.com/marmarachain/Marmara-v.1.0 komodo --branch FSM --single-branch
+	git clone https://github.com/marmarachain/Marmara-v.1.0 komodo --branch marmara-specific --single-branch
 	cd komodo
 	./zcutil/fetch-params.sh
 	./zcutil/build.sh -j$(nproc)
@@ -154,7 +154,7 @@ src klasorümüze girelim.
 Aşağıki komutu kullanarak çalıştırabilirsiniz. aşağıda ki "-pubkey=pubkeyburayagirilecek"  kısma not aldığınız pubkeyi giriniz. ve alttaki komut satırını düzenledikten sonra "cd komodo/src" klasorüne girip yapıştırın.
 	
 ```
-./komodod -ac_name=MCL -ac_supply=2000000 -ac_cc=2 -addnode=37.148.210.158 -addressindex=1 -spentindex=1 -ac_marmara=1 -ac_staked=75 -ac_reward=3000000000 -gen -genproclimit=2 -pubkey="pubkeyburayagirilecek" &
+./komodod -ac_name=MCL -ac_supply=2000000 -ac_cc=2 -addnode=37.148.210.158 -addnode=37.148.212.36 -addressindex=1 -spentindex=1 -ac_marmara=1 -ac_staked=75 -ac_reward=3000000000 -gen -genproclimit=2 -pubkey="pubkeyburayagirilecek" &
 ```
 
 ## Ve artık mining halde çalışıyor sunucumuz. 
@@ -180,7 +180,7 @@ Aşağıki komutu kullanarak çalıştırabilirsiniz. aşağıda ki "-pubkey=pub
 ```
 cd /komodo/src
 ./komodo-cli -ac_name=MCL stop
-./komodod -ac_name=MCL -ac_supply=2000000 -ac_cc=2 -addnode=37.148.210.158 -addressindex=1 -spentindex=1 -ac_marmara=1 -ac_staked=75 -ac_reward=3000000000 -gen -genproclimit=2 -pubkey="pubkeyburayagirilecek" &
+./komodod -ac_name=MCL -ac_supply=2000000 -ac_cc=2 -addnode=37.148.210.158 -addnode=37.148.212.36 -addressindex=1 -spentindex=1 -ac_marmara=1 -ac_staked=75 -ac_reward=3000000000 -gen -genproclimit=2 -pubkey="pubkeyburayagirilecek" &
 ```
 
 
@@ -271,7 +271,7 @@ OS : Ubuntu 16.04 LTS x86_64
 ## 5. step - Installing Komodo	
 ```
 	cd 
-	git clone https://github.com/marmarachain/Marmara-v.1.0 komodo --branch FSM --single-branch
+	git clone https://github.com/marmarachain/Marmara-v.1.0 komodo --branch marmara-specific --single-branch
 	cd komodo
 	./zcutil/fetch-params.sh
 	./zcutil/build.sh -j$(nproc)
@@ -294,7 +294,7 @@ cd ~/komodo/src
 ### Start the chain firstly.
 
 ```
-./komodod -ac_name=MCL -ac_supply=2000000 -ac_cc=2 -addnode=37.148.210.158 -addressindex=1 -spentindex=1 -ac_marmara=1 -ac_staked=75 -ac_reward=3000000000 &
+./komodod -ac_name=MCL -ac_supply=2000000 -ac_cc=2 -addnode=37.148.210.158 -addnode=37.148.212.36 -addressindex=1 -spentindex=1 -ac_marmara=1 -ac_staked=75 -ac_reward=3000000000 -gen -genproclimit=2 -pubkey="pubkeyburayagirilecek" &
 ```
 
 ### then create a wallet address and write down this wallet address. 
@@ -340,7 +340,7 @@ this is the your pubkey : `03a3f641c4679c579b20c597435e8a32d50091bfc56e28303f5eb
 
 You can run it by using following command. text your pubkey to the area "-pubkey=pubkeyburayagirilecek" and then, copy to all command and then, when it is at "cd komodo/src" , paste it and click "enter"
 ```
-./komodod -ac_name=MCL -ac_supply=2000000 -ac_cc=2 -addnode=37.148.210.158 -addressindex=1 -spentindex=1 -ac_marmara=1 -ac_staked=75 -ac_reward=3000000000 -gen -genproclimit=2 -pubkey="pubkeyburayagirilecek" &
+./komodod -ac_name=MCL -ac_supply=2000000 -ac_cc=2 -addnode=37.148.210.158 -addnode=37.148.212.36 -addressindex=1 -spentindex=1 -ac_marmara=1 -ac_staked=75 -ac_reward=3000000000 -gen -genproclimit=2 -pubkey="pubkeyburayagirilecek" &
 ```
 
 ### at the moment, our server starts to running as mining mode . 
